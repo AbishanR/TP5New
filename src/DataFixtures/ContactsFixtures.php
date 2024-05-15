@@ -37,6 +37,7 @@ class ContactsFixtures extends Fixture
                         -> setAvatar ("https://randomuser.me/api/portraits/". $type . "/"  . $i . ".jpg");
             $manager -> persist($contact);
             }
+
         $manager->flush();
     }
 }
